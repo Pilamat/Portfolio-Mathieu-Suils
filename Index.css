@@ -7,6 +7,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Saira Extra Condensed', sans-serif;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
@@ -22,9 +24,14 @@ body {
 
 
 header {
+    padding: 20px; /* Espacement intérieur */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%,rgb(0, 60, 87) 100%);
     text-align: center;
-    padding: 0.5rem 0 5rem;
+
     font-size: 1.25rem;
 }
 
@@ -67,6 +74,40 @@ a {
 
     }
 }
+image{
+    display: flex;
+    justify-content: center;
+}
 .text{
     margin-left: 15px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    min-height: 3vh;
+}
+footer {
+    margin-top: 5%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%,rgb(0, 60, 87) 100%);
+    text-align: center;
+    padding: 0.5rem 0 5rem;
+    font-size: 1.25rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
