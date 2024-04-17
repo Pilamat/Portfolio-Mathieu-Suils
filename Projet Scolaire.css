@@ -5,8 +5,18 @@
 *::after {
     box-sizing: border-box;
 }
-body {
+.body {
     margin: 10%;
+    padding: 0;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #003C57;
+    margin top: 10%
+}
+body {
+    margin: 0;
     padding: 0;
     font-family: 'Saira Extra Condensed', sans-serif;
     letter-spacing: 1px;
@@ -23,7 +33,6 @@ header {
     z-index: 1000;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%,rgb(0, 60, 87) 100%);
     text-align: center;
-
     font-size: 1.25rem;
 }
 ul {
@@ -38,7 +47,24 @@ li {
 
 a {
     position: relative;
-    padding: 1rem 0 0.5rem;
+    padding: 1rem 0 0.5rem;@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-flex;
+    }
+
     margin: 0 1.5rem;
     color: #04bbff;
     text-decoration: none;
@@ -75,6 +101,7 @@ a {
     min-height: 3vh;
 }
 footer {
+    width: 100%;
     margin-top: 5%;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%,rgb(0, 60, 87) 100%);
     text-align: center;
@@ -99,3 +126,4 @@ footer {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
